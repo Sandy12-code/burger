@@ -1,0 +1,20 @@
+<img src="./img/burger img.jpg" alt="burger img">
+
+<h1>Eat-Da-Burger!</h1>
+
+<ul>
+    {{#each burgers}}
+    <li>
+        <input type="text" name="burger-type"><button type="button">Devour It!</button>
+    </li>
+    {{/each}}
+</ul>
+
+
+<form action="/" method="POST">
+	<input type="text" name="burger-type">
+    <br>
+	<button type="submit">Submit</button>
+</form>
+
+<p>Enter a Burger you want to eat and click submit</p>
