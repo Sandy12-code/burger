@@ -1,20 +1,37 @@
-<img src="./img/burger img.jpg" alt="burger img">
-
 <h1>Eat-Da-Burger!</h1>
 
-<ul>
-    {{#each burgers}}
-    <li>
-        <input type="text" name="burger-type"><button type="button">Devour It!</button>
-    </li>
-    {{/each}}
-</ul>
+<div class="jumbotron">
+    <img class="img" src="assets/img/burger_img.jpg" alt="burger img">
+    <h2 class="display-4">Are You Hungry?!</h2>
+
+    {{!-- function showButtons () { $('.dev').show(); } --}}
+    <br>
+    <br>
+
+    <div>
+        <ul id="burger-list">
+            {{#each burgers}}
+                <li>{{burger_name}}</li> <button> </button>
+            {{/each}}
+        </ul>
+    </div>
+
+    <form class="create-burger">
+        <div class="btn btn-primary btn-lg">
+            <input type="text" id="bug" name="burger-type">
+            <br>
+            <button type="submit">Submit</button>
+
+            <p>Enter a Burger you want to eat and click submit</p>
+        </div>
+    </form>
+</div>
 
 
-<form action="/" method="POST">
-	<input type="text" name="burger-type">
+{{!-- <form class="create-burger">
+    <div class="form-group">
+	<input type="text" id="bug" name="burger-type">
     <br>
 	<button type="submit">Submit</button>
-</form>
-
-<p>Enter a Burger you want to eat and click submit</p>
+    </div>
+</form>  --}}

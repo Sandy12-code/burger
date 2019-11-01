@@ -1,0 +1,21 @@
+
+.img {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(67, 67, 211);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+#bug {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    color: rgb(235, 86, 86);
+}
