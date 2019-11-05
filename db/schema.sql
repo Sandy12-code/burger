@@ -12,7 +12,7 @@ CREATE TABLE burgers (
   id int NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR (255) NOT NULL,
   devoured BOOLEAN DEFAULT false,
-  created_at TIMESTAMP NOT NULL,
+  createdAt TIMESTAMP NOT NULL,
   PRIMARY KEY (id)
 );
 ​
