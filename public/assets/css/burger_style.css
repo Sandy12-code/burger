@@ -1,3 +1,14 @@
+.jumbotron {
+    background-color: rgb(189, 115, 115);
+    margin-top: 20px;
+}
+.create-burger {
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+
+
 
 .img {
     text-align: center;
@@ -17,5 +28,5 @@ body {
 }
 
 * {
-    color: rgb(235, 86, 86);
+    color: rgb(70, 25, 25)
 }

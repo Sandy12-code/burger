@@ -1,37 +1,77 @@
-<h1>Eat-Da-Burger!</h1>
+<div class="container">
 
-<div class="jumbotron">
-    <img class="img" src="assets/img/burger_img.jpg" alt="burger img">
-    <h2 class="display-4">Are You Hungry?!</h2>
+    <div class="jumbotron">
+        <h1>Eat-Da-Burger! </h1>
+        <img class="img" src="assets/img/burger_img.jpg" alt="burger img">
+        <panel>
+            <form class="create-burger">
+                <div class="form-group">
+                    <label for="newburger"><strong>Enter a Burger</strong></label>
+                    <input type="text" id="newburger" name="burger">
+                    {{!-- <select data-placeholder="" id="newburger" name="burger"> --}}
+                        {{!-- <option value="Nothing Selected" selected>Please Select a Sandwich</option>
+                        <option value="Hamburger">Hamburger</option>
+                        <option value="CheeseBurger">CheeseBurger</option>
+                        <option value="DoubleBfChz">Double Up (double meat and cheese)</option>
+                        <option value="VeggieBurger">Veggie Burger</option>
+                        <option value="PulledPork">Pulled Pork Sandwich</option>
+                        <option value="ChichenClub">Chicken Club Sandwich</option>
+                        <option value="SteaknChz">Steak and Cheese Sandwich</option> --}}
+                    {{!-- </select>  --}}
 
-    {{!-- function showButtons () { $('.dev').show(); } --}}
-    <br>
-    <br>
-
-    <div>
-        <ul id="burger-list">
-            {{#each burgers}}
-                <li>{{burger_name}}</li> <button> </button>
-            {{/each}}
-        </ul>
+                    <button type="submit" class="btn btn-success" id="addburger">
+                        <span class="fa fa-thumbs-up"></span>
+                    </button>
+                </div>
+            </form>
+        </panel>
     </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="leftside"><strong>Devour The Burgers you selected</strong>
+                </div>
+                <div class="panel-body">
 
-    <form class="create-burger">
-        <div class="btn btn-primary btn-lg">
-            <input type="text" id="bug" name="burger-type">
-            <br>
-            <button type="submit">Submit</button>
+                    <ul>
+                        {{#each burgers}}
+                        {{#unless devoured}}
 
-            <p>Enter a Burger you want to eat and click submit</p>
+                        <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
+                        <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}"><span class="fa fa-usd"></span></button>
+                        <hr>
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+
+                </div>
+            </div>
         </div>
-    </form>
-</div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading" id="rightside"><strong>Burger Devoured!</strong>
+                    <p>Remove Burger from list when devoured</p>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
+                        <button type="button" class="trashburger btn btn-danger" id="trashbutton" data-id="{{this.id}}"
+                            data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                        <hr>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
 
 
-{{!-- <form class="create-burger">
-    <div class="form-group">
-	<input type="text" id="bug" name="burger-type">
-    <br>
-	<button type="submit">Submit</button>
+
+                </div>
+            </div>
+        </div>
+
     </div>
-</form>  --}}
+    <!--endrow -->
+</div>
+<!--endcontainer -->
