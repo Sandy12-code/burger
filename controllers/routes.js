@@ -66,7 +66,7 @@ router.get("/", function(req, res) {
     var condition = "id = " + req.params.id;
 
     console.log("condition", condition);
-    burger.update({ devoured: req.body.devoured }, condition, function(
+    burger.updateOne({ devoured: req.body.devoured }, condition, function(
       result
     ) {
       if (result.changedRows === 0) {
