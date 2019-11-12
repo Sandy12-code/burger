@@ -1,4 +1,4 @@
-A sequelized version of the Burger App
+<h1>A sequelized version of the Burger App</h1>
 
 * PROBLEM/SOLUTION
 A restaurant app that lets users input the names of burgers they'd like to eat.
