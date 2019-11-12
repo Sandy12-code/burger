@@ -1,9 +1,9 @@
-# An ORM and Handlebars version of the Burger App
+# The Burger App (Using Handlebars and ORM)
 
-## PROBLEM/SOLUTION
+## App Description
 * A restaurant app that lets users input the names of burgers they'd like to eat.
 
-## Burger Overview
+## Burger App Overview
 * server.js (Sets up our app to use express and to listen at a port.)
 * package.json
 * package-lock.json
