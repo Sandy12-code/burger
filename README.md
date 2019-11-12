@@ -41,7 +41,6 @@
 
 ## Technologies Used
 * CSS3
-* Animate.css
 * Bootstrap 4
 * JavaScript
 * jQuery
