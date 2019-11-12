@@ -1,4 +1,4 @@
-# A sequelized version of the Burger App
+# An ORM and Handlebars version of the Burger App
 
 ## PROBLEM/SOLUTION
 * A restaurant app that lets users input the names of burgers they'd like to eat.
