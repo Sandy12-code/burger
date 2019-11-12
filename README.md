@@ -44,6 +44,7 @@
 * Animate.css
 * Bootstrap 4
 * JavaScript
+* jQuery
 * Node
-* NPMs: Express, Handlebars, dotenv, Sequelize, Sequelize-cli
+* NPMs: Express, express-handlebars, Handlebars, body-parser, mysql2
 ## This app was created entirely by Sandy Enow
