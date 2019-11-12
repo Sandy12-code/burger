@@ -8,12 +8,15 @@
 * package.json
 * package-lock.json
 ### config
-* config.json file created by sequelize
+* connection.js
+* orm.js
 ### controllers
-* burgers_controller.js (Routes our functionality)
+* routes.js (Routes our functionality)
+### db
+* schema.sql
+* seeds.sql
 ### models
-* burgers.js (Sequelize model for burger data.)
-* index.js (Boiler plate Sequelize file.)
+* burgers.js (exporting the database function for the controller orm.js)
 ### public
 * assets
 #### css
@@ -21,7 +24,7 @@
 * reset.css (Resets any style that the browser might have preloaded.)
 #### img (All images used in project.)
 #### js
-* app.js (Runs the click functionality of the app.)
+* burgers.js (Runs the click functionality of the app.)
 ### views
 * layouts
 * main.handlebars (The layout that our index.handlebars references.)
